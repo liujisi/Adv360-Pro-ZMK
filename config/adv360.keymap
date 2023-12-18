@@ -93,11 +93,11 @@
 
         layer_symbol {
             bindings = <
-&trans  &trans           &trans                &trans                 &trans            &trans         &trans                                      &trans  &trans            &trans             &trans  &trans  &trans  &trans
-&trans  &kp CARET        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR        &kp PERCENT    &trans                                      &trans  &trans            &trans             &trans  &trans  &trans  &trans
-&trans  &kp EXCLAMATION  &kp EQUAL             &kp PLUS               &kp COLON         &kp ASTERISK   &trans  &trans  &trans      &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans  &trans  &trans
-&trans  &kp LESS_THAN    &kp PIPE              &kp MINUS              &kp GREATER_THAN  &kp AMPERSAND                  &trans      &trans                  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &trans  &trans  &trans
-&trans  &trans           &trans                &trans                 &trans                           &trans  &trans  &trans      &trans  &trans  &trans                    &trans             &trans  &trans  &trans  &trans
+&trans  &trans           &trans                &trans                 &trans            &trans         &trans                                      &trans  &trans  &trans            &trans             &trans  &trans  &trans
+&trans  &kp CARET        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp DOLLAR        &kp PERCENT    &trans                                      &trans  &trans  &trans            &trans             &trans  &trans  &trans
+&trans  &kp EXCLAMATION  &kp EQUAL             &kp PLUS               &kp COLON         &kp ASTERISK   &trans  &trans  &trans      &trans  &trans  &trans  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans  &trans
+&trans  &kp LESS_THAN    &kp PIPE              &kp MINUS              &kp GREATER_THAN  &kp AMPERSAND                  &trans      &trans                  &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE    &trans  &trans  &trans
+&trans  &trans           &trans                &trans                 &trans                           &trans  &trans  &trans      &trans  &trans  &trans          &trans            &trans             &trans  &trans  &trans
             >;
         };
     };
