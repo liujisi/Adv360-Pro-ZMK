@@ -25,7 +25,7 @@
 / {
     behaviors {
         #include "macros.dtsi"
-    #include "version.dtsi"
+        #include "version.dtsi"
 
         hm: homerow_mods {
             compatible = "zmk,behavior-hold-tap";
@@ -36,6 +36,16 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        blt: basic_layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "BASIC_LAYER_TAP";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick_tap_ms = <175>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&kp>;
+        };
     };
 
     keymap {
@@ -45,7 +55,7 @@
             bindings = <
 &kp EQUAL     &kp N1     &kp N2    &kp N3            &kp N4     &kp N5  &tog LAYER_KEYPAD                                                       &mo LAYER_MOD   &kp N6  &kp N7    &kp N8             &kp N9    &kp N0    &kp MINUS
 &kp TAB       &kp Q      &kp W     &kp E             &kp R      &kp T   &none                                                                   &tog LAYER_MAC  &kp Y   &kp U     &kp I              &kp O     &kp P     &kp BSLH
-&kp ESC       &kp A      &lt 5 S   &mt LEFT_SHIFT D  &kp F      &kp G   &none              &kp LCTRL  &kp LALT            &kp LGUI   &kp RCTRL  &none           &kp H   &kp J     &mt RIGHT_SHIFT K  &lt 5 L   &kp SEMI  &kp SQT
+&kp ESC       &kp A      &blt LAYER_SYMBOL S   &hm LEFT_SHIFT D  &kp F      &kp G   &none              &kp LCTRL  &kp LALT            &kp LGUI   &kp RCTRL  &none           &kp H   &kp J     &hm RIGHT_SHIFT K  &blt 5 L   &kp SEMI  &kp SQT
 &kp LSHFT     &kp Z      &kp X     &kp C             &kp V      &kp B                                 &kp UNDERSCORE      &kp PG_UP                             &kp N   &kp M     &kp COMMA          &kp DOT   &kp FSLH  &kp RSHFT
 &mo LAYER_FN  &kp GRAVE  &kp CAPS  &kp LEFT          &kp RIGHT          &kp BSPC           &kp DEL    &kp EQUAL           &kp PG_DN  &kp ENTER  &kp SPACE               &kp DOWN  &kp UP             &kp LBKT  &kp RBKT  &mo LAYER_FN
             >;
